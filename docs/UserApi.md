@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.UserApi
+# ModokiApi.UserApi
 
 All URIs are relative to *http://localhost:4434/api/v2*
 
@@ -21,16 +21,16 @@ addAuthorizedKeys user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
-var userAuthorizedKey = new ModokiApiDocumentation.UserAuthorizedKey(); // UserAuthorizedKey | 
+var apiInstance = new ModokiApi.UserApi();
+var userAuthorizedKey = new ModokiApi.UserAuthorizedKey(); // UserAuthorizedKey | 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -68,15 +68,15 @@ getConfig user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
+var apiInstance = new ModokiApi.UserApi();
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -111,15 +111,15 @@ getDefaultShell user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
+var apiInstance = new ModokiApi.UserApi();
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -154,15 +154,15 @@ listAuthorizedKeys user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
+var apiInstance = new ModokiApi.UserApi();
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -197,15 +197,15 @@ removeAuthorizedKeys user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
+var apiInstance = new ModokiApi.UserApi();
 var label = "label_example"; // String | 
 var callback = function(error, data, response) {
   if (error) {
@@ -244,16 +244,16 @@ setAuthorizedKeys user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
-var userAuthorizedKey = [new ModokiApiDocumentation.UserAuthorizedKey()]; // [UserAuthorizedKey] | 
+var apiInstance = new ModokiApi.UserApi();
+var userAuthorizedKey = [new ModokiApi.UserAuthorizedKey()]; // [UserAuthorizedKey] | 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -291,15 +291,15 @@ setDefaultShell user
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.UserApi();
+var apiInstance = new ModokiApi.UserApi();
 var defaultShell = "defaultShell_example"; // String | 
 var callback = function(error, data, response) {
   if (error) {

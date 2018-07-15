@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaUserDefaultshell
+# ModokiApi.GoaUserDefaultshell
 
 ## Properties
 Name | Type | Description | Notes

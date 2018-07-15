@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.Error
+# ModokiApi.Error
 
 ## Properties
 Name | Type | Description | Notes

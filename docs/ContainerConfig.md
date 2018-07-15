@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.ContainerConfig
+# ModokiApi.ContainerConfig
 
 ## Properties
 Name | Type | Description | Notes

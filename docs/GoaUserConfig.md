@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaUserConfig
+# ModokiApi.GoaUserConfig
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaContainerConfig
+# ModokiApi.GoaContainerConfig
 
 ## Properties
 Name | Type | Description | Notes

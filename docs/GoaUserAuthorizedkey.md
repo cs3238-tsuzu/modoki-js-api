@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaUserAuthorizedkey
+# ModokiApi.GoaUserAuthorizedkey
 
 ## Properties
 Name | Type | Description | Notes

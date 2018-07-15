@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaContainerInspectRawState
+# ModokiApi.GoaContainerInspectRawState
 
 ## Properties
 Name | Type | Description | Notes

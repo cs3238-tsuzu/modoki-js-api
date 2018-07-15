@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.GoaContainerInspect
+# ModokiApi.GoaContainerInspect
 
 ## Properties
 Name | Type | Description | Notes

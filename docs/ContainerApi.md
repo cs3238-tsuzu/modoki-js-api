@@ -1,4 +1,4 @@
-# ModokiApiDocumentation.ContainerApi
+# ModokiApi.ContainerApi
 
 All URIs are relative to *http://localhost:4434/api/v2*
 
@@ -29,15 +29,15 @@ create a new container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var image = "image_example"; // String | Name of image
 var name = "name_example"; // String | Name of container and subdomain
 var opts = {
@@ -94,15 +94,15 @@ Copy files from the container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | ID or name
 var internalPath = "internalPath_example"; // String | Path in the container to save files
 var callback = function(error, data, response) {
@@ -145,15 +145,15 @@ Copy files from the container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var internalPath = "internalPath_example"; // String | Path in the container to save files
 var opts = {
   'id': "id_example" // String | ID or name
@@ -198,15 +198,15 @@ Exec a command with attaching to a container using WebSocket(Mainly for xterm.js
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
 var opts = {
   'command': ["inner_example"], // [String] | The path to the executable file
@@ -253,15 +253,15 @@ Get the config of a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
 var callback = function(error, data, response) {
   if (error) {
@@ -302,15 +302,15 @@ Return details of a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | ID or name
 var callback = function(error, data, response) {
   if (error) {
@@ -351,15 +351,15 @@ Return a list of containers
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -396,15 +396,15 @@ Get stdout and stderr logs from a container.
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
 var opts = {
   'follow': false, // Boolean | 
@@ -461,15 +461,15 @@ remove a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var force = false; // Boolean | If the container is running, kill it before removing it.
 var id = "id_example"; // String | id or name
 var callback = function(error, data, response) {
@@ -512,17 +512,17 @@ Change the config of a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
-var containerConfig = new ModokiApiDocumentation.ContainerConfig(); // ContainerConfig | 
+var containerConfig = new ModokiApi.ContainerConfig(); // ContainerConfig | 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -563,15 +563,15 @@ start a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
 var callback = function(error, data, response) {
   if (error) {
@@ -612,15 +612,15 @@ stop a container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | id or name
 var callback = function(error, data, response) {
   if (error) {
@@ -661,15 +661,15 @@ Copy files to the container
 
 ### Example
 ```javascript
-var ModokiApiDocumentation = require('modoki_api_documentation');
-var defaultClient = ModokiApiDocumentation.ApiClient.instance;
+var ModokiApi = require('modoki_api');
+var defaultClient = ModokiApi.ApiClient.instance;
 // Configure API key authorization: jwt
 var jwt = defaultClient.authentications['jwt'];
 jwt.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //jwt.apiKeyPrefix = 'Token';
 
-var apiInstance = new ModokiApiDocumentation.ContainerApi();
+var apiInstance = new ModokiApi.ContainerApi();
 var id = "id_example"; // String | ID or name
 var copyUIDGID = false; // Boolean | Copy all uid/gid information
 var data = "/path/to/file"; // File | File tar archive
